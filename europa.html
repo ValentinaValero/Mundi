@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Europa</title>
+<link rel="stylesheet" href="estilos.css">
+<style>
+ body {
+    margin: 0;
+    
+    background: #f6f2ec;
+    
+    
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.2em;
+    margin-bottom: 50px;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+  }
+
+  /* --------- Faixas editoriais ---------- */
+  .faixa {
+    width: 100%;
+    height: 30px;
+    margin: 50px 0 40px;
+    background: linear-gradient(90deg, #1b3c88, #e3d6b5);
+    opacity: 0.85;
+    border-radius: 4px;
+  }
+
+  /* --------- Layout de revista ---------- */
+  .revista {
+    column-count: 3;
+    column-gap: 35px; /* diminui o espaço entre colunas */
+    max-width: 1200px; /* largura máxima do conteúdo */
+    margin: auto;      /* centraliza tudo */
+  }
+
+  .secao {
+    break-inside: avoid;
+    margin-bottom: 20px;
+  }
+
+  .secao h2 {
+    font-size: 1.7em;
+    margin-top: 0;
+  }
+
+  .secao p, .secao h2{
+    margin-left: 3%;
+  }
+
+  /* --------- Foto estilo Polaroid -------- */
+  .polaroid {
+    background: #fff;
+    padding: 10px 10px 25px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transform: rotate(-1deg);
+    transition: 0.3s;
+    max-width: 280px; /* ou o tamanho que você quiser */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .polaroid:hover {
+    transform: rotate(0deg) scale(1.02);
+  }
+
+  .polaroid img {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .polaroid .caption {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 6px;
+    font-style: italic;
+    color: #4a4a4a;
+  }
+
+  /* Responsividade */
+  @media (max-width: 1100px) {
+    .revista { column-count: 2; }
+  }
+
+  @media (max-width: 750px) {
+    .revista { column-count: 1; }
+  }
+
+  .hero {
+    background: url('https://guiaviajarmelhor.com.br/wp-content/uploads/2015/10/cidades-mais-bonitas-europa.jpg') center/cover fixed;
+    height: 50vh;
+font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centraliza verticalmente */
+    align-items: center;       /* Centraliza horizontalmente */
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1, .hero p{
+    background-color: #00000071;
+    padding: 2%;
+    margin: 0;
+    width: 130vh;
+    
+    
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="inicio" href="index.html">Início</a>
+  <a class="um" href="africa.html">África</a>
+  <a class="dois" href="americas.html">Américas</a>
+  <a class="tres" href="europa.html">Europa</a>
+  <a class="quatro" href="asia.html">Ásia</a>
+  <a class="cinco" href="oceania.html">Oceania</a>
+  <a class="seis" href="antartida.html">Antártica</a>
+
+</nav>
+
+<header class="hero">
+    <h1>As Américas</h1>
+    <p>América (algumas vezes referida como Américas; em castelhano: América, em francês: Amérique, em guarani: Amérika, em inglês: the Americas, em neerlandês: Amerika, em quíchua: Amirika) é o continente localizado no hemisfério ocidental, estendendo-se no sentido norte-sul, desde o oceano Ártico até o Cabo Horn, ao longo de cerca de 15 mil quilômetros. É o segundo maior continente do mundo em extensão territorial.</p>
+
+</header>
+
+<div class="faixa"></div>
+
+<div class="revista">
+
+  <div class="secao">
+    <div class="polaroid">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+      <div class="caption">Cidades históricas europeias</div>
+    </div>
+    <h2>Diversidade Cultural</h2>
+    <p>A Europa reúne diferentes tradições, sociedades e povos, formando um dos continentes mais variados do mundo em identidade e expressão cultural.</p>
+  </div>
+
+  <div class="secao">
+    <div class="polaroid">
+      <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef">
+      <div class="caption">Famílias linguísticas</div>
+    </div>
+    <h2>Variedade Linguística</h2>
+    <p>As línguas europeias derivam de famílias diversas, como germânica, românica e eslava. Cada região possui histórias linguísticas próprias.</p>
+  </div>
+
+  <div class="secao">
+    <div class="polaroid">
+      <img src="https://gerencialconstrutora.com.br//wp-content/uploads/2020/12/arquitetura-europeia-6-lugares-para-conhecer-mais-e-se-apaixonar-1-1080x675-1-1024x640.jpg">
+      <div class="caption">Patrimônio arquitetônico</div>
+    </div>
+    <h2>Arquitetura Histórica</h2>
+    <p>Castelos medievais, palácios barrocos e catedrais góticas moldam a paisagem europeia, misturando eras e estilos.</p>
+  </div>
+
+ 
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>África</title>
+<link rel="stylesheet" href="estilos.css">
+<style>
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+  padding: 20px;
+  
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+.cards {
+display: grid;
+justify-items: center;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+padding: 40px;
+max-width: 1200px;
+margin: auto;
+}
+
+
+.card {
+width: 80%;
+height: 350px;
+perspective: 1000px;
+
+}
+
+.card img{
+    filter: brightness(70%);
+}
+
+
+.card-inner {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.8s;
+}
+
+
+.card:hover .card-inner {
+transform: rotateY(180deg);
+}
+
+
+.card-face {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 15px;
+overflow: hidden;
+display: flex;
+}
+
+
+.front {
+background: #97832a;
+color: rgb(255, 255, 255);
+
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.front img {
+width: 50%;
+object-fit: cover;
+}
+
+
+.front .title {
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+padding: 20px;
+text-align: center;
+}
+
+
+.back {
+background: white;
+padding: 20px;
+transform: rotateY(180deg);
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+height: 300px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background: url('https://wallpapers.com/images/hd/africa-4k-3840-x-2160-li1puufh8xzvnrvq.jpg') center/cover fixed;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centraliza verticalmente */
+    align-items: center;       /* Centraliza horizontalmente */
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1, .hero p{
+    background-color: #00000071;
+    padding: 2%;
+    margin: 0;
+    width: 100vh;
+    
+    
+}
+
+.hero h1{
+    font-size: 3.2em;
+}
+
+.info img{
+    width: 50vh;
+    
+}
+
+.info {
+    display: flex;
+    
+    gap: 30px;
+    padding: 30px;
+    width: 190vh;
+    margin: 40px auto;
+    color: white;
+    background: #97832a;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    transition: transform .3s;
+}
+
+.info h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+
+.info img {
+    width: 45%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+.info h1 {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.info p {
+    margin-left: 3%;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="inicio" href="index.html">Início</a>
+  <a class="um" href="africa.html">África</a>
+  <a class="dois" href="americas.html">Américas</a>
+  <a class="tres" href="europa.html">Europa</a>
+  <a class="quatro" href="asia.html">Ásia</a>
+  <a class="cinco" href="oceania.html">Oceania</a>
+  <a class="seis" href="antartida.html">Antártica</a>
+
+</nav>
+
+
+<header class="hero">
+    <h1>Culturas da África</h1>
+    <p>A África é o terceiro maior continente do mundo, rica em diversidade cultural, linguística e histórica. Possui 54 países reconhecidos e abriga milhares de etnias e mais de 2.000 línguas. É conhecida por suas paisagens variadas, desde desertos como o Saara até florestas tropicais, savanas e regiões montanhosas.</p>
+
+</header>
+
+
+
+<section class="cards">
+
+<!-- CARD 1: Divisões -->
+<div class="card">
+<div class="card-inner">
+<div class="card-face front">
+<img src="https://static.significados.com.br/foto/paises-da-africa-og.jpg" alt="Mapa da África">
+<div class="title">Divisões</div>
+</div>
+<div class="card-face back">
+A África pode ser dividida em cinco grandes regiões: África Setentrional, Ocidental, Central, Oriental e Meridional. Cada uma possui características culturais e geográficas distintas.
+</div>
+</div>
+</div>
+
+
+<!-- CARD 2: Línguas -->
+<div class="card">
+<div class="card-inner">
+<div class="card-face front">
+<img src="https://st2.depositphotos.com/1074452/7714/i/950/depositphotos_77145033-stock-photo-afrikaans-language-means-south-africa.jpg" alt="Cultura Africana">
+<div class="title">Línguas</div>
+</div>
+<div class="card-face back">
+O continente possui mais de 2.000 línguas. As principais famílias linguísticas são: Afro-asiática, Niger-Congo, Nilo-Saariana e Khoisan. Além disso, idiomas coloniais como inglês, francês e português também são amplamente utilizados.
+</div>
+</div>
+</div>
+
+
+<!-- CARD 3: Cultura -->
+<div class="card">
+<div class="card-inner">
+<div class="card-face front">
+<img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2019/11/africa-historia-caracteristicas-do-continente-paises-populacao-e-idiomas-11.jpg" alt="Tradições africanas">
+<div class="title">Cultura</div>
+</div>
+<div class="card-face back">
+A cultura africana é extremamente diversa, com tradições musicais, danças, roupas, religiões e culinárias diferentes entre as etnias. A arte africana é amplamente reconhecida por suas esculturas, tecidos e ritmos.
+</div>
+</div>
+</div>
+
+<div class="info">
+    <img src="https://plus.unsplash.com/premium_photo-1661936361131-c421746dcd0d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUMzJUExZnJpY2F8ZW58MHx8MHx8fDA%3D" alt="">
+
+    <div>
+    <h1>Geografia</h1>
+    <p>A África possui paisagens diversas como o Deserto do Saara, o Vale do Rift, savanas, florestas tropicais e grandes rios como o Nilo, Congo e Níger. É um continente de enorme riqueza natural.</p>
+    </div>
+</div>
+
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Europa – Revista Cultural</title>
+
+<style>
+/* ========================== */
+/* ESTILO GERAL REVISTA */
+/* ========================== */
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: #f6f3ef;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  padding: 40px 0 20px;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.editorial-strip {
+  background: #d9c9b4;
+  padding: 10px;
+  margin: 20px auto;
+  width: 90%;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 8px solid #8e6e4e;
+}
+
+/* ========================== */
+/* LAYOUT EM 3 COLUNAS */
+/* ========================== */
+
+.container {
+  column-count: 3;
+  column-gap: 40px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section {
+  break-inside: avoid;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c7b6a3;
+}
+
+.section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ========================== */
+/* POLAROIDS COM FLIP + TILT */
+/* ========================== */
+
+.polaroid-area {
+  column-span: all; /* ocupar largura total */
+  margin: 60px 0;
+  text-align: center;
+}
+
+.polaroid-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.polaroid {
+  width: 220px;
+  height: 260px;
+  position: relative;
+  transform: rotate(var(--rotate));
+  transition: transform .4s ease;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid .front, .polaroid .back {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 10px solid white;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform .6s ease;
+}
+
+.polaroid .front {
+  transform: rotateY(0deg);
+}
+
+.polaroid .back {
+  transform: rotateY(180deg);
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.polaroid:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.polaroid:hover .back {
+  transform: rotateY(0deg);
+}
+
+.polaroid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ========================== */
+/* CAPA FINAL */
+/* ========================== */
+
+footer {
+  margin: 60px 0 30px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Europa – Culturas & Línguas</h1>
+
+<div class="editorial-strip">Edição Especial · Culturas, Línguas e Identidades da Europa</div>
+
+<!-- ========================== -->
+<!-- CONTEÚDO EM 3 COLUNAS -->
+<!-- ========================== -->
+
+<div class="container">
+
+  <div class="section">
+    <h2>Cultura Europeia</h2>
+    <p>A Europa é um mosaico vibrante de tradições, idiomas e histórias que se entrelaçam ao longo dos séculos...</p>
+  </div>
+
+  <div class="section">
+    <h2>Diversidade Linguística</h2>
+    <p>Mais de 200 línguas são faladas no continente, incluindo famílias como românicas, eslavas e germânicas.</p>
+  </div>
+
+  <div class="s
+
