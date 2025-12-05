@@ -2,48 +2,116 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Oceania</title>
-<link rel="stylesheet" href="estilos.css">
+<title>Oceania – Paralaxe Documentário</title>
+
 <style>
-h1 { text-align: center; }
-ul {
-  list-style: none;
-  padding: 0;
-  width: 60%;
-  margin: 20px auto;
-}
-li {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  transition: 0.3s;
-  box-shadow: 0 2px 6px #0002;
-}
-li:hover {
-  transform: scale(1.03);
-  background: #cce7ff;
-}
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0c0c0c;
+    color: #fff;
+    line-height: 1.7;
+  }
+
+  /* ---------------- SEÇÕES PARALLAX ---------------- */
+  .parallax {
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  }
+
+  /* ---------------- SEÇÕES DE TEXTO ---------------- */
+  .content {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+
+  .content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #ffd27f;
+  }
+
+  .content p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+  }
+
+  /* Imagens das seções */
+  .img1 {
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+  }
+
+  .img2 {
+    background-image: url("https://images.unsplash.com/photo-1504252060328-5a5b4efb81f9?auto=format&fit=crop&w=1600&q=80");
+  }
+
+  .img3 {
+    background-image: url("https://images.unsplash.com/photo-1470219556762-1771e7f9427d?auto=format&fit=crop&w=1600&q=80");
+  }
 </style>
 </head>
+
 <body>
 
-<nav>
-  <a href="index.html">Início</a>
-  <a href="africa.html">África</a>
-  <a href="americas.html">Américas</a>
-  <a href="europa.html">Europa</a>
-  <a href="asia.html">Ásia</a>
-  <a href="oceania.html">Oceania</a>
-</nav>
+<!-- PARALLAX 1 -->
+<section class="parallax img1">
+  <h1>OCEANIA</h1>
+</section>
 
-<h1>Oceania</h1>
+<!-- CONTEÚDO 1 -->
+<div class="content">
+  <h2>Culturas Polinésias</h2>
+  <p>
+    A Oceania abriga algumas das culturas mais antigas e conectadas ao mar.
+    Povoações polinésias navegaram por milhares de quilômetros usando apenas as
+    estrelas, os ventos e o comportamento das ondas.
+  </p>
+  <p>
+    Tradições como danças, tatuagens simbólicas e narrativas orais formam a base
+    da identidade cultural de ilhas como Samoa, Tonga e Havaí.
+  </p>
+</div>
 
-<ul>
-  <li><strong>Línguas:</strong> Inglês, maori, samoano, fijiano.</li>
-  <li><strong>Culturas:</strong> Danças tradicionais, tatuagens maori, costumes oceânicos.</li>
-  <li><strong>Povos:</strong> Aborígenes australianos e povos polinésios.</li>
-</ul>
+<!-- PARALLAX 2 -->
+<section class="parallax img2"></section>
+
+<!-- CONTEÚDO 2 -->
+<div class="content">
+  <h2>Povos Aborígenes Australianos</h2>
+  <p>
+    Os aborígenes da Austrália carregam uma história estimada em mais de
+    50 mil anos — uma das culturas contínuas mais antigas do planeta.
+  </p>
+  <p>
+    A conexão com a terra, conhecida como “Dreamtime”, molda crenças,
+    artes e modos de vida que valorizam o equilíbrio entre natureza e comunidade.
+  </p>
+</div>
+
+<!-- PARALLAX 3 -->
+<section class="parallax img3"></section>
+
+<!-- CONTEÚDO 3 -->
+<div class="content">
+  <h2>Arquitetura Natural e Paisagens</h2>
+  <p>
+    Da Grande Barreira de Corais às montanhas vulcânicas da Nova Zelândia,
+    a Oceania apresenta cenários únicos que influenciaram profundamente as
+    culturas locais e seus mitos de origem.
+  </p>
+</div>
 
 </body>
 </html>
