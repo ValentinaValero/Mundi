@@ -4,12 +4,11 @@
 <meta charset="UTF-8">
 <title>Europa</title>
 <link rel="stylesheet" href="estilos.css">
+
 <style>
+
  body {
     margin: 0;
-    
-    background: #f6f2ec;
-    
     
   }
 
@@ -17,7 +16,6 @@
     text-align: center;
     font-size: 3.2em;
     margin-bottom: 50px;
-    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: normal;
   }
@@ -35,23 +33,29 @@
   /* --------- Layout de revista ---------- */
   .revista {
     column-count: 3;
-    column-gap: 35px; /* diminui o espaço entre colunas */
-    max-width: 1200px; /* largura máxima do conteúdo */
-    margin: auto;      /* centraliza tudo */
+    column-gap: 45px;
+    max-width: 1200px;
+    margin: auto;
   }
 
   .secao {
     break-inside: avoid;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    
   }
 
   .secao h2 {
     font-size: 1.7em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    
     margin-top: 0;
   }
 
   .secao p, .secao h2{
+    text-align: center;
     margin-left: 3%;
+    
   }
 
   /* --------- Foto estilo Polaroid -------- */
@@ -63,13 +67,13 @@
     margin-bottom: 15px;
     transform: rotate(-1deg);
     transition: 0.3s;
-    max-width: 280px; /* ou o tamanho que você quiser */
+    max-width: 260px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .polaroid:hover {
-    transform: rotate(0deg) scale(1.02);
+    transform: rotate(0deg) scale(1.03);
   }
 
   .polaroid img {
@@ -94,30 +98,84 @@
     .revista { column-count: 1; }
   }
 
+  /* --------- Hero -------- */
   .hero {
     background: url('https://guiaviajarmelhor.com.br/wp-content/uploads/2015/10/cidades-mais-bonitas-europa.jpg') center/cover fixed;
     height: 50vh;
-font-family: sans-serif;
+    font-family: sans-serif;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* Centraliza verticalmente */
-    align-items: center;       /* Centraliza horizontalmente */
+    justify-content: center;
+    align-items: center;
 
     text-align: center;
     color: white;
     padding: 20px;
-}
+  }
 
-.hero h1, .hero p{
+  .hero h1, .hero p{
     background-color: #00000071;
     padding: 2%;
     margin: 0;
     width: 130vh;
+  }
+
+  /* --------- Curiosidades minimalistas ---------- */
+
+  .curiosidades {
+    padding: 40px 5%;
+    margin-top: 40px;
+    text-align: center;
     
+  }
+
+  .curiosidades h2 {
+    font-size: 2.4em;
+    margin-bottom: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
     
-}
+  }
+
+  .curio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .curio-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    border-left: 6px solid #1b3c88;
+  }
+
+  .curio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.22);
+  }
+
+  .curio-card p {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5em;
+  }
+
+  .emoji {
+    width: 30vh;
+
+    justify-self: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
 </style>
 </head>
+
 <body>
 
 <nav>
@@ -128,13 +186,13 @@ font-family: sans-serif;
   <a class="quatro" href="asia.html">Ásia</a>
   <a class="cinco" href="oceania.html">Oceania</a>
   <a class="seis" href="antartida.html">Antártica</a>
-
 </nav>
 
 <header class="hero">
-    <h1>As Américas</h1>
-    <p>América (algumas vezes referida como Américas; em castelhano: América, em francês: Amérique, em guarani: Amérika, em inglês: the Americas, em neerlandês: Amerika, em quíchua: Amirika) é o continente localizado no hemisfério ocidental, estendendo-se no sentido norte-sul, desde o oceano Ártico até o Cabo Horn, ao longo de cerca de 15 mil quilômetros. É o segundo maior continente do mundo em extensão territorial.</p>
-
+    <h1>Europa</h1>
+    <p>
+      A Europa reúne diferentes tradições, línguas, histórias e povos, formando um dos continentes mais diversos do mundo.
+    </p>
 </header>
 
 <div class="faixa"></div>
@@ -147,7 +205,7 @@ font-family: sans-serif;
       <div class="caption">Cidades históricas europeias</div>
     </div>
     <h2>Diversidade Cultural</h2>
-    <p>A Europa reúne diferentes tradições, sociedades e povos, formando um dos continentes mais variados do mundo em identidade e expressão cultural.</p>
+    <p>A Europa reúne tradições, sociedades e povos muito distintos, formando um mosaico cultural único.</p>
   </div>
 
   <div class="secao">
@@ -156,7 +214,7 @@ font-family: sans-serif;
       <div class="caption">Famílias linguísticas</div>
     </div>
     <h2>Variedade Linguística</h2>
-    <p>As línguas europeias derivam de famílias diversas, como germânica, românica e eslava. Cada região possui histórias linguísticas próprias.</p>
+    <p>As línguas europeias derivam de famílias diversas: germânica, românica, eslava e outras.</p>
   </div>
 
   <div class="secao">
@@ -165,12 +223,40 @@ font-family: sans-serif;
       <div class="caption">Patrimônio arquitetônico</div>
     </div>
     <h2>Arquitetura Histórica</h2>
-    <p>Castelos medievais, palácios barrocos e catedrais góticas moldam a paisagem europeia, misturando eras e estilos.</p>
+    <p>Castelos, catedrais e palácios formam o cenário europeu e revelam sua profundidade histórica.</p>
   </div>
 
- 
-  
 </div>
+
+<div class="faixa"></div>
+
+<section class="curiosidades">
+  <h2>Curiosidades da Europa</h2>
+
+  <div class="curio-container">
+
+    <div class="curio-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png" class="emoji"></img>
+      <p>A Itália tem mais de <b>1.000 tipos de massas</b>.</p>
+    </div>
+
+    <div class="curio-card">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR8AAACvCAMAAADzNCq+AAAARVBMVEX///8AL2wAG2MAFGGwuMnR1+EAIWXO1N+Pm7MAK2pJX4kAJ2gAHmQAJWeSnrVjdJi0vcyptMd1haQADV84UoE/V4ShrMA19LGhAAABuUlEQVR4nO3b2U1DQRBFwQfGC/tO/qFCBIVGaskIn0rg9pz/2bZZx93VisNpeP+vq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH62H6xz9O5D/7NzazTYanP/fPL8AHDtutZa3l+Ag3vT9sW33Np6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfWzbzXpY3H8c3p+27We9rgV6fBvenzb93e7f/R8c1v9Tq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pjx/fbFdeX1mf/cbfi8+vcB//iG2oyZf3QzUCGAAAAAElFTkSuQmCC" class="emoji"></img>
+      <p>A Finlândia possui <b>mais saunas do que carros</b>.</p>
+    </div>
+
+    <div class="curio-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png" class="emoji"></img>
+      <p>A República Tcheca é o país que <b>mais consome cerveja per capita</b>.</p>
+    </div>
+
+    <div class="curio-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png" class="emoji"></img>
+      <p>A Suécia tem mais de <b>270 mil ilhas</b>, formando o maior arquipélago do mundo.</p>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>

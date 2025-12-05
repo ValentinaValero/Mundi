@@ -2,181 +2,261 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Europa – Revista Cultural</title>
+<title>Europa</title>
+<link rel="stylesheet" href="estilos.css">
 
 <style>
-/* ========================== */
-/* ESTILO GERAL REVISTA */
-/* ========================== */
 
-body {
-  margin: 0;
-  font-family: "Georgia", serif;
-  background: #f6f3ef;
-  color: #222;
-}
+ body {
+    margin: 0;
+    
+  }
 
-h1 {
-  text-align: center;
-  padding: 40px 0 20px;
-  font-size: 48px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+  h1 {
+    text-align: center;
+    font-size: 3.2em;
+    margin-bottom: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+  }
 
-.editorial-strip {
-  background: #d9c9b4;
-  padding: 10px;
-  margin: 20px auto;
-  width: 90%;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-left: 8px solid #8e6e4e;
-}
+  /* --------- Faixas editoriais ---------- */
+  .faixa {
+    width: 100%;
+    height: 30px;
+    margin: 50px 0 40px;
+    background: linear-gradient(90deg, #1b3c88, #e3d6b5);
+    opacity: 0.85;
+    border-radius: 4px;
+  }
 
-/* ========================== */
-/* LAYOUT EM 3 COLUNAS */
-/* ========================== */
+  /* --------- Layout de revista ---------- */
+  .revista {
+    column-count: 3;
+    column-gap: 45px;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-.container {
-  column-count: 3;
-  column-gap: 40px;
-  padding: 40px;
-  max-width: 1300px;
-  margin: auto;
-}
+  .secao {
+    break-inside: avoid;
+    margin-bottom: 35px;
+    
+  }
 
-.section {
-  break-inside: avoid;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #c7b6a3;
-}
+  .secao h2 {
+    font-size: 1.7em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    
+    margin-top: 0;
+  }
 
-.section h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
+  .secao p, .secao h2{
+    text-align: center;
+    margin-left: 3%;
+    
+  }
 
-.section p {
-  font-size: 16px;
-  line-height: 1.6;
-}
+  /* --------- Foto estilo Polaroid -------- */
+  .polaroid {
+    background: #fff;
+    padding: 10px 10px 25px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transform: rotate(-1deg);
+    transition: 0.3s;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* ========================== */
-/* POLAROIDS COM FLIP + TILT */
-/* ========================== */
+  .polaroid:hover {
+    transform: rotate(0deg) scale(1.03);
+  }
 
-.polaroid-area {
-  column-span: all; /* ocupar largura total */
-  margin: 60px 0;
-  text-align: center;
-}
+  .polaroid img {
+    width: 100%;
+    border-radius: 3px;
+  }
 
-.polaroid-container {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
+  .polaroid .caption {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 6px;
+    font-style: italic;
+    color: #4a4a4a;
+  }
 
-.polaroid {
-  width: 220px;
-  height: 260px;
-  position: relative;
-  transform: rotate(var(--rotate));
-  transition: transform .4s ease;
-  cursor: pointer;
-  perspective: 1000px;
-}
+  /* Responsividade */
+  @media (max-width: 1100px) {
+    .revista { column-count: 2; }
+  }
 
-.polaroid:hover {
-  transform: rotate(0deg) scale(1.05);
-}
+  @media (max-width: 750px) {
+    .revista { column-count: 1; }
+  }
 
-.polaroid .front, .polaroid .back {
-  width: 100%;
-  height: 100%;
-  background: white;
-  border: 10px solid white;
-  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
-  border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transition: transform .6s ease;
-}
+  /* --------- Hero -------- */
+  .hero {
+    background: url('https://guiaviajarmelhor.com.br/wp-content/uploads/2015/10/cidades-mais-bonitas-europa.jpg') center/cover fixed;
+    height: 50vh;
+    font-family: sans-serif;
 
-.polaroid .front {
-  transform: rotateY(0deg);
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.polaroid .back {
-  transform: rotateY(180deg);
-  padding: 20px;
-  font-size: 14px;
-  line-height: 1.4;
-}
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
 
-.polaroid:hover .front {
-  transform: rotateY(-180deg);
-}
+  .hero h1, .hero p{
+    background-color: #00000071;
+    padding: 2%;
+    margin: 0;
+    width: 130vh;
+  }
 
-.polaroid:hover .back {
-  transform: rotateY(0deg);
-}
+  /* --------- Curiosidades minimalistas ---------- */
 
-.polaroid img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 4px;
-}
+  .curiosidades {
+    padding: 40px 5%;
+    margin-top: 40px;
+    text-align: center;
+    
+  }
 
-.caption {
-  text-align: center;
-  margin-top: 8px;
-  font-weight: bold;
-  font-size: 14px;
-}
+  .curiosidades h2 {
+    font-size: 2.4em;
+    margin-bottom: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    
+  }
 
-/* ========================== */
-/* CAPA FINAL */
-/* ========================== */
+  .curio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
 
-footer {
-  margin: 60px 0 30px;
-  text-align: center;
-  font-style: italic;
-  opacity: 0.7;
-}
+  .curio-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    border-left: 6px solid #1b3c88;
+  }
+
+  .curio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.22);
+  }
+
+  .curio-card p {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5em;
+  }
+
+  .emoji {
+    width: 30vh;
+
+    justify-self: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
 </style>
 </head>
 
 <body>
 
-<h1>Europa – Culturas & Línguas</h1>
+<nav>
+  <a class="inicio" href="index.html">Início</a>
+  <a class="um" href="africa.html">África</a>
+  <a class="dois" href="americas.html">Américas</a>
+  <a class="tres" href="europa.html">Europa</a>
+  <a class="quatro" href="asia.html">Ásia</a>
+  <a class="cinco" href="oceania.html">Oceania</a>
+  <a class="seis" href="antartida.html">Antártica</a>
+</nav>
 
-<div class="editorial-strip">Edição Especial · Culturas, Línguas e Identidades da Europa</div>
+<header class="hero">
+    <h1>Europa</h1>
+    <p>
+      A Europa reúne diferentes tradições, línguas, histórias e povos, formando um dos continentes mais diversos do mundo.
+    </p>
+</header>
 
-<!-- ========================== -->
-<!-- CONTEÚDO EM 3 COLUNAS -->
-<!-- ========================== -->
+<div class="faixa"></div>
 
-<div class="container">
+<div class="revista">
 
-  <div class="section">
-    <h2>Cultura Europeia</h2>
-    <p>A Europa é um mosaico vibrante de tradições, idiomas e histórias que se entrelaçam ao longo dos séculos...</p>
+  <div class="secao">
+    <div class="polaroid">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+      <div class="caption">Cidades históricas europeias</div>
+    </div>
+    <h2>Diversidade Cultural</h2>
+    <p>A Europa reúne tradições, sociedades e povos muito distintos, formando um mosaico cultural único.</p>
   </div>
 
-  <div class="section">
-    <h2>Diversidade Linguística</h2>
-    <p>Mais de 200 línguas são faladas no continente, incluindo famílias como românicas, eslavas e germânicas.</p>
+  <div class="secao">
+    <div class="polaroid">
+      <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef">
+      <div class="caption">Famílias linguísticas</div>
+    </div>
+    <h2>Variedade Linguística</h2>
+    <p>As línguas europeias derivam de famílias diversas: germânica, românica, eslava e outras.</p>
   </div>
 
-  <div class="s
+  <div class="secao">
+    <div class="polaroid">
+      <img src="https://gerencialconstrutora.com.br//wp-content/uploads/2020/12/arquitetura-europeia-6-lugares-para-conhecer-mais-e-se-apaixonar-1-1080x675-1-1024x640.jpg">
+      <div class="caption">Patrimônio arquitetônico</div>
+    </div>
+    <h2>Arquitetura Histórica</h2>
+    <p>Castelos, catedrais e palácios formam o cenário europeu e revelam sua profundidade histórica.</p>
+  </div>
 
+</div>
+
+<div class="faixa"></div>
+
+<section class="curiosidades">
+  <h2>Curiosidades da Europa</h2>
+
+  <div class="curio-container">
+
+    <div class="curio-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png" class="emoji"></img>
+      <p>A Itália tem mais de <b>1.000 tipos de massas</b>.</p>
+    </div>
+
+    <div class="curio-card">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR8AAACvCAMAAADzNCq+AAAARVBMVEX///8AL2wAG2MAFGGwuMnR1+EAIWXO1N+Pm7MAK2pJX4kAJ2gAHmQAJWeSnrVjdJi0vcyptMd1haQADV84UoE/V4ShrMA19LGhAAABuUlEQVR4nO3b2U1DQRBFwQfGC/tO/qFCBIVGaskIn0rg9pz/2bZZx93VisNpeP+vq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH62H6xz9O5D/7NzazTYanP/fPL8AHDtutZa3l+Ag3vT9sW33Np6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfWzbzXpY3H8c3p+27We9rgV6fBvenzb93e7f/R8c1v9Tq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pjx/fbFdeX1mf/cbfi8+vcB//iG2oyZf3QzUCGAAAAAElFTkSuQmCC" class="emoji"></img>
+      <p>A Finlândia possui <b>mais saunas do que carros</b>.</p>
+    </div>
+
+    <div class="curio-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png" class="emoji"></img>
+      <p>A República Tcheca é o país que <b>mais consome cerveja per capita</b>.</p>
+    </div>
+
+    <div class="curio-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png" class="emoji"></img>
+      <p>A Suécia tem mais de <b>270 mil ilhas</b>, formando o maior arquipélago do mundo.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
