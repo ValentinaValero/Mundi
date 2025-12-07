@@ -1,0 +1,170 @@
+h1,
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+
+
+.artigo {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.artigo h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 30%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-base {
+    position: relative;
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-base img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+/* Escurecer imagem */
+.card-base:hover img {
+    filter: brightness(55%);
+}
+
+/* Texto que aparece */
+.card-base .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: 0.3s ease;
+}
+
+
+.card-base:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* GRÁFICO */
+#grafico-animado {
+    color: #ddd;
+    margin-top: 25px;
+}
+
+.barra-animada {
+    margin-bottom: 12px;
+    background: #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 28px;
+    position: relative;
+}
+
+.barra-animada span {
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    font-size: 0.9rem;
+}
+
+.preenchimento {
+    height: 100%;
+    width: 0%;
+    background: #611694;
+    transition: width 1.5s ease-out;
+}
+
+/* TABELA */
+.filtro-container {
+    margin-top: 30px;
+}
+
+#filtro {
+    cursor: pointer;
+}
+
+
+
+select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background: #611694;
+    color: white;
+}
+
+
+
+.hero {
+    background: url('https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nationalgeographic_2815258.jpg?w=1600&h=901') center/cover fixed;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1,
+.hero p {
+    background-color: #00000071;
+    padding: 2%;
+    margin: 0;
+    width: 130vh;
+
+
+}
+
+.hero h1 {
+    font-size: 3.2em;
+}

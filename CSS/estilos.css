@@ -1,0 +1,105 @@
+/* MENU PADRÃO */
+nav {
+  font-family: Arial, sans-serif;
+  background: #464646;
+  padding: 15px;
+  text-align: center;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .inicio:hover {
+  color: #a1a1a1;
+}
+
+nav .um:hover {
+  color: #f0ff6b;
+}
+
+nav .dois:hover {
+  color: #9cff75;
+}
+
+nav .tres:hover {
+  color: #8ddfff;
+}
+
+
+nav .quatro:hover {
+  color: #ff809b;
+}
+
+nav .cinco:hover {
+  color: #ff9152;
+}
+
+nav .seis:hover {
+  color: #c267ff;
+}
+
+/* Botão flutuante */
+#btn-flutuante {
+  font-family: sans-serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #007bff;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+/* Fundo escurecido */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  /* escondido por padrão */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Caixa de conteúdo */
+.overlay-content {
+  background: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.overlay-content h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+}
+
+.overlay-content p {
+  font-family: sans-serif;
+}

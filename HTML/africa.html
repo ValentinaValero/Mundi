@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>África</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/africa.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a class="inicio" href="index.html">Início</a>
+        <a class="um" href="africa.html">África</a>
+        <a class="dois" href="americas.html">Américas</a>
+        <a class="tres" href="europa.html">Europa</a>
+        <a class="quatro" href="asia.html">Ásia</a>
+        <a class="cinco" href="oceania.html">Oceania</a>
+        <a class="seis" href="antartida.html">Antártida</a>
+
+    </nav>
+
+
+    <header class="hero">
+        <h1>Culturas da África</h1>
+        <p>A África é o terceiro maior continente do mundo, rica em diversidade cultural, linguística e histórica.
+            Possui 54 países reconhecidos e abriga milhares de etnias e mais de 2.000 línguas. É conhecida por suas
+            paisagens variadas, desde desertos como o Saara até florestas tropicais, savanas e regiões montanhosas.</p>
+    </header>
+
+
+
+    <section class="cards">
+
+        <!-- CARD 1: Divisões -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face front">
+                    <img src="https://static.significados.com.br/foto/paises-da-africa-og.jpg" alt="Mapa da África">
+                    <div class="title">Divisões</div>
+                </div>
+                <div class="card-face back">
+                    A África pode ser dividida em cinco grandes regiões: África Setentrional, Ocidental, Central,
+                    Oriental e Meridional. Cada uma possui características culturais e geográficas distintas.
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CARD 2: Línguas -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face front">
+                    <img src="https://st2.depositphotos.com/1074452/7714/i/950/depositphotos_77145033-stock-photo-afrikaans-language-means-south-africa.jpg"
+                        alt="Cultura Africana">
+                    <div class="title">Línguas</div>
+                </div>
+                <div class="card-face back">
+                    O continente possui mais de 2.000 línguas. As principais famílias linguísticas são: Afro-asiática,
+                    Niger-Congo, Nilo-Saariana e Khoisan. Além disso, idiomas coloniais como inglês, francês e português
+                    também são amplamente utilizados.
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CARD 3: Cultura -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-face front">
+                    <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2019/11/africa-historia-caracteristicas-do-continente-paises-populacao-e-idiomas-11.jpg"
+                        alt="Tradições africanas">
+                    <div class="title">Cultura</div>
+                </div>
+                <div class="card-face back">
+                    A cultura africana é extremamente diversa, com tradições musicais, danças, roupas, religiões e
+                    culinárias diferentes entre as etnias. A arte africana é amplamente reconhecida por suas esculturas,
+                    tecidos e ritmos.
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <img src="https://plus.unsplash.com/premium_photo-1661936361131-c421746dcd0d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUMzJUExZnJpY2F8ZW58MHx8MHx8fDA%3D"
+                alt="foto-áfrica">
+
+            <div>
+                <h1>Geografia</h1>
+                <p>A África possui paisagens diversas como o Deserto do Saara, o Vale do Rift, savanas, florestas
+                    tropicais e grandes rios como o Nilo, Congo e Níger. É um continente de enorme riqueza natural.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Botão flutuante -->
+    <div id="btn-flutuante">?</div>
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <h2>africa.html, Continente</h2>
+            <p>Essa página representa um conjunto de dados isolado, focado apenas no continente africano. Ela contribui
+                para o sistema ao fornecer um bloco temático específico. Representa a categoria África dentro da
+                estrutura do site.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        const btn = document.getElementById("btn-flutuante");
+        const overlay = document.getElementById("overlay");
+
+        btn.onclick = () => {
+            overlay.style.display = "flex";
+        };
+
+        
+        overlay.onclick = (e) => {
+            if (e.target === overlay) overlay.style.display = "none";
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Antártida — Pesquisa Científica</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/antartida.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a class="inicio" href="index.html">Início</a>
+        <a class="um" href="africa.html">África</a>
+        <a class="dois" href="americas.html">Américas</a>
+        <a class="tres" href="europa.html">Europa</a>
+        <a class="quatro" href="asia.html">Ásia</a>
+        <a class="cinco" href="oceania.html">Oceania</a>
+        <a class="seis" href="antartida.html">Antártida</a>
+
+    </nav>
+
+    <header class="hero">
+        <h1>Antártida</h1>
+        <p>A Antártida é o continente mais frio, seco e ventoso da Terra. Totalmente coberta por gelo e sem população
+            nativa, abriga apenas pesquisadores de diversos países que
+            estudam clima, vida extrema e mudanças ambientais. É uma região dedicada à ciência e à cooperação
+            internacional.</p>
+
+    </header>
+
+    <section class="artigo">
+
+        <!-- TEXTOS ORIGINAIS -->
+        <h2>Por que não existem povos nativos?</h2>
+        <p>
+            A Antártida nunca desenvolveu uma população humana nativa devido às condições extremas:
+            temperaturas abaixo de -50°C, ausência de plantas comestíveis e longos períodos sem luz solar.
+            Além disso, o continente é isolado por oceanos turbulentos, dificultando migração e ocupação.
+        </p>
+
+        <h2>Por que existem países presentes lá?</h2>
+        <p>
+            Diferentes países mantêm bases de pesquisa graças ao <strong>Tratado da Antártida (1959)</strong>,
+            que transforma o continente em uma área dedicada à ciência e à paz — sem dono, sem exército
+            e sem exploração comercial de recursos.
+        </p>
+
+        <!-- GALERIA -->
+        <div class="galeria">
+            <div class="card-base">
+                <img src="https://www.monumentos.gob.cl/sites/default/files/image-monumentos/ohiggins1.jpg"
+                    alt="Base Chilena">
+                <div class="overlay">Base O'Higgins – Chile</div>
+            </div>
+
+            <div class="card-base">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Operation_Deep_Freeze_2007%2C_McMurdo_Station_070207-N-4868G-147.JPEG"
+                    alt="Base McMurdo EUA">
+                <div class="overlay">McMurdo – EUA</div>
+            </div>
+
+            <div class="card-base">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/KohnenStation.JPG" alt="Base Alemã">
+                <div class="overlay">Kohnen – Alemanha</div>
+            </div>
+        </div>
+
+        <!-- GRÁFICO -->
+        <h2>Gráfico de Bases por País (Animado)</h2>
+        <p>O gráfico abaixo se anima automaticamente ao aparecer na tela.</p>
+
+        <div id="grafico-animado">
+            <div class="barra-animada" data-valor="100"><span>Argentina – 6 bases</span>
+                <div class="preenchimento"></div>
+            </div>
+            <div class="barra-animada" data-valor="80"><span>Chile – 4 bases</span>
+                <div class="preenchimento"></div>
+            </div>
+            <div class="barra-animada" data-valor="70"><span>EUA – 3 bases</span>
+                <div class="preenchimento"></div>
+            </div>
+            <div class="barra-animada" data-valor="50"><span>Reino Unido – 2 bases</span>
+                <div class="preenchimento"></div>
+            </div>
+            <div class="barra-animada" data-valor="40"><span>Brasil – 1 base</span>
+                <div class="preenchimento"></div>
+            </div>
+        </div>
+
+
+        <!-- TABELA -->
+        <h2>Tabela dinâmica das bases por país</h2>
+        <p>Escolha um país para ver suas bases científicas.</p>
+
+        <div class="filtro-container">
+            <select id="filtro">
+                <option value="todos">Mostrar todos</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="EUA">EUA</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+        </div>
+
+        <table id="tabela-bases">
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Base</th>
+                    <th>Localização</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr data-pais="Argentina">
+                    <td>Argentina</td>
+                    <td>Base Esperanza</td>
+                    <td>Península Antártica</td>
+                </tr>
+                <tr data-pais="Argentina">
+                    <td>Argentina</td>
+                    <td>Base Marambio</td>
+                    <td>Ilha Seymour</td>
+                </tr>
+                <tr data-pais="Chile">
+                    <td>Chile</td>
+                    <td>Base Frei</td>
+                    <td>Ilha King George</td>
+                </tr>
+                <tr data-pais="Chile">
+                    <td>Chile</td>
+                    <td>Base O'Higgins</td>
+                    <td>Costa Ocidental</td>
+                </tr>
+                <tr data-pais="EUA">
+                    <td>EUA</td>
+                    <td>McMurdo</td>
+                    <td>Ilha Ross</td>
+                </tr>
+                <tr data-pais="EUA">
+                    <td>EUA</td>
+                    <td>Amundsen-Scott</td>
+                    <td>Polo Sul</td>
+                </tr>
+                <tr data-pais="Reino Unido">
+                    <td>Reino Unido</td>
+                    <td>Rothera</td>
+                    <td>Ilha Adelaide</td>
+                </tr>
+                <tr data-pais="Brasil">
+                    <td>Brasil</td>
+                    <td>Comandante Ferraz</td>
+                    <td>Ilha King George</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Conclusão</h2>
+        <p>
+            A Antártida permanece o único continente sem povo nativo, mas com forte presença global por
+            causa da cooperação científica. É um modelo raro de diplomacia internacional em funcionamento.
+        </p>
+
+    </section>
+
+
+    <!-- Botão flutuante -->
+    <div id="btn-flutuante">?</div>
+
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <h2>antartida.html — Continente</h2>
+            <p>Esse continente possui características distintas. Além de conteúdo cultural, ela embute dados mais
+                técnicos e científicos, diferenciando sua categoria interna, mesmo que o seu objetivo geral seja
+                parecido ao das demais: centralizar informações da Antártida em um módulo independente.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        const btn = document.getElementById("btn-flutuante");
+        const overlay = document.getElementById("overlay");
+
+        btn.onclick = () => {
+            overlay.style.display = "flex";
+        };
+
+       
+        overlay.onclick = (e) => {
+            if (e.target === overlay) overlay.style.display = "none";
+        };
+
+        
+        const barras = document.querySelectorAll(".barra-animada");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const barra = entry.target;
+                    const valor = barra.getAttribute("data-valor");
+                    const preenchimento = barra.querySelector(".preenchimento");
+
+                    preenchimento.style.width = valor + "%";
+
+                    
+                    observer.unobserve(barra);
+                }
+            });
+        }, { threshold: 0.4 }); 
+
+        barras.forEach(barra => {
+            observer.observe(barra);
+        });
+
+
+
+     
+        const filtro = document.getElementById("filtro");
+        const linhas = document.querySelectorAll("#tabela-bases tbody tr");
+
+        filtro.addEventListener("change", () => {
+            const pais = filtro.value;
+
+            linhas.forEach(linha => {
+                if (pais === "todos" || linha.dataset.pais === pais) {
+                    linha.style.display = "";
+                } else {
+                    linha.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

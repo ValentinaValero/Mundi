@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+
+  color: #000000;
+  line-height: 1.7;
+}
+
+
+.parallax {
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+}
+
+.parallax h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.content p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* Imagens das seções */
+
+.img1 {
+  background-image: url("https://blog.kangaroo.com.br/wp-content/uploads/2016/12/Sauda%C3%A7%C3%A3o-calorosa-dos-polin%C3%A9sios.jpg");
+}
+
+.img2 {
+  background-image: url("https://s2-g1.glbimg.com/iFjnNU7QhguGCwdUEUpoP9FGQ9Q=/0x0:5472x3648/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/F/U/hQaOz0RKaRA3u7noLhZw/yunupingu-australia.jpg");
+}
+
+.img3 {
+  background-image: url("https://images.unsplash.com/photo-1470219556762-1771e7f9427d?auto=format&fit=crop&w=1600&q=80");
+}
+
+.hero {
+  background: url('https://australiancentre.com.br/wp-content/uploads/2019/10/308289-x-curiosidades-incriveis-da-polinesia-da-oceania.jpg') center/cover fixed;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1,
+.hero p {
+  background-color: #00000071;
+  padding: 2%;
+  margin: 0;
+  width: 130vh;
+
+
+}
+
+.hero h1 {
+  font-size: 3.2em;
+}

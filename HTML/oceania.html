@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Oceania – Paralaxe Documentário</title>
+  <link rel="stylesheet" href="../CSS/estilos.css">
+  <link rel="stylesheet" href="../CSS/oceania.css">
+
+
+</head>
+
+<body>
+
+  <nav>
+    <a class="inicio" href="index.html">Início</a>
+    <a class="um" href="africa.html">África</a>
+    <a class="dois" href="americas.html">Américas</a>
+    <a class="tres" href="europa.html">Europa</a>
+    <a class="quatro" href="asia.html">Ásia</a>
+    <a class="cinco" href="oceania.html">Oceania</a>
+    <a class="seis" href="antartida.html">Antártida</a>
+
+  </nav>
+
+  <header class="hero">
+    <h1>Oceania</h1>
+    <p>A Oceania é um conjunto diverso de ilhas e territórios distribuídos pelo Pacífico. As populações polinésias
+      desenvolveram técnicas de navegação marítima e de construção de canoas que permitiram migrações longínquas entre
+      ilhas. Em paralelo, os povos aborígenes da Austrália possuem uma das histórias culturais contínuas mais antigas do
+      planeta.</p>
+
+  </header>
+
+
+
+  <!-- CONTEÚDO 1 -->
+  <div class="content">
+    <h2>Culturas Polinésias</h2>
+    <p>
+      A Oceania abriga algumas das culturas mais antigas e conectadas ao mar.
+      Povoações polinésias navegaram por milhares de quilômetros usando apenas as
+      estrelas, os ventos e o comportamento das ondas.
+    </p>
+    <p>
+      Tradições como danças, tatuagens simbólicas e narrativas orais formam a base
+      da identidade cultural de ilhas como Samoa, Tonga e Havaí.
+    </p>
+  </div>
+
+  <section class="parallax img1"></section>
+
+
+  <!-- CONTEÚDO 2 -->
+  <div class="content">
+    <h2>Povos Aborígenes Australianos</h2>
+    <p>
+      Os aborígenes da Austrália carregam uma história estimada em mais de
+      50 mil anos — uma das culturas contínuas mais antigas do planeta.
+    </p>
+    <p>
+      A conexão com a terra, conhecida como “Dreamtime”, molda crenças,
+      artes e modos de vida que valorizam o equilíbrio entre natureza e comunidade.
+    </p>
+  </div>
+
+  <section class="parallax img2"></section>
+
+  <!-- CONTEÚDO 3 -->
+  <div class="content">
+    <h2>Arquitetura Natural e Paisagens</h2>
+    <p>
+      Da Grande Barreira de Corais às montanhas vulcânicas da Nova Zelândia,
+      a Oceania apresenta cenários únicos que influenciaram profundamente as
+      culturas locais e seus mitos de origem.
+    </p>
+  </div>
+
+
+  <!-- Botão flutuante -->
+  <div id="btn-flutuante">?</div>
+
+  <div id="overlay">
+    <div class="overlay-content">
+      <h2>oceania.html, Continente</h2>
+      <p>A página oceania.html tem o papel de encerrar e completar o conjunto de módulos continentais do sistema. Ela
+        contribui para o site ao manter a simetria, preservando o padrão em que cada continente possui sua própria área
+        dedicada.</p>
+    </div>
+  </div>
+
+
+
+  <script>
+    const btn = document.getElementById("btn-flutuante");
+    const overlay = document.getElementById("overlay");
+
+    btn.onclick = () => {
+      overlay.style.display = "flex";
+    };
+
+    overlay.onclick = (e) => {
+      if (e.target === overlay) overlay.style.display = "none";
+    };
+  </script>
+</body>
+
+</html>

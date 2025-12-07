@@ -1,0 +1,181 @@
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    padding: 20px;
+
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.card {
+    width: 80%;
+    height: 350px;
+    perspective: 1000px;
+
+}
+
+.card img {
+    filter: brightness(70%);
+}
+
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.front {
+    background: #97832a;
+    color: rgb(255, 255, 255);
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.front img {
+    width: 50%;
+    object-fit: cover;
+}
+
+
+.front .title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.back {
+    background: white;
+    padding: 20px;
+    transform: rotateY(180deg);
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background: url('https://wallpapers.com/images/hd/africa-4k-3840-x-2160-li1puufh8xzvnrvq.jpg') center/cover fixed;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1,
+.hero p {
+    background-color: #00000071;
+    padding: 2%;
+    margin: 0;
+    width: 100vh;
+
+
+}
+
+.hero h1 {
+    font-size: 3.2em;
+}
+
+.info img {
+    width: 50vh;
+
+}
+
+.info {
+    display: flex;
+
+    gap: 30px;
+    padding: 30px;
+    width: 190vh;
+    margin: 40px auto;
+    color: white;
+    background: #97832a;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition: transform .3s;
+}
+
+.info h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+
+.info img {
+    width: 45%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+.info h1 {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.info p {
+    margin-left: 3%;
+    font-size: 17px;
+    line-height: 1.6;
+}

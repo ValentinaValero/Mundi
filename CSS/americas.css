@@ -1,0 +1,148 @@
+nav {
+  text-align: center;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+}
+
+.conteudo {
+  display: flex;
+  margin-top: 4%;
+  justify-content: flex-start;
+  /* mapa fica à esquerda */
+  gap: 40px;
+  padding: 20px;
+}
+
+/* MAPA */
+.mapa-container {
+  position: relative;
+  display: inline-block;
+}
+
+.mapa-container img {
+  width: 500px;
+  max-width: 90vw;
+}
+
+.popup {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  display: none;
+  font-size: 14px;
+}
+
+.marcador {
+  width: 18px;
+  height: 18px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+}
+
+/* CARD AO LADO */
+.info-card {
+  width: 520px;
+  background: #ffffff;
+
+  padding: 45px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+
+
+.info-card p {
+  font-size: 15px;
+  line-height: 1.5;
+
+}
+
+.hero {
+  background: url('https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/angel-falls-venezuela.jpg?w=1900&h=1267') center/cover fixed;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1,
+.hero p {
+  background-color: #00000071;
+  padding: 2%;
+  margin: 0;
+  width: 130vh;
+
+
+}
+
+.hero h1 {
+  font-size: 3.2em;
+}
+
+.info img {
+  width: 50vh;
+
+}
+
+.info {
+  display: flex;
+
+  gap: 30px;
+  padding: 30px;
+  width: 160vh;
+  margin: 40px auto;
+  color: rgb(36, 36, 36);
+  background: #9cff75;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  transition: transform .3s;
+}
+
+.info h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+}
+
+.info img {
+  width: 45%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+
+.info h1 {
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.info p {
+  margin-left: 3%;
+  font-size: 17px;
+  line-height: 1.6;
+}

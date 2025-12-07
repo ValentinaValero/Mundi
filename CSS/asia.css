@@ -1,0 +1,280 @@
+.conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.img-wide {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+
+.titulo-bloco {
+
+    font-size: 2rem;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.linha {
+    width: 80px;
+    height: 3px;
+    background: #333;
+    margin-bottom: 25px;
+}
+
+.timeline-container {
+    margin-top: 100px;
+    padding: 40px;
+    background: #f0ece7;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.timeline {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 60px;
+    scrollbar-width: thin;
+}
+
+.timeline-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.timeline-item .dot {
+    width: 22px;
+    height: 22px;
+    background: #333;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.timeline-item .year {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fade 0.3s ease;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.close {
+    position: absolute;
+    left: 150vh;
+    top: 9vh;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 700px) {
+    .timeline {
+        flex-direction: column;
+        gap: 30px;
+        overflow-x: visible;
+    }
+}
+
+/* Container */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 40px;
+    background: #f0ece7;
+    position: relative;
+}
+
+/* Linha da timeline */
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 39vh;
+    left: 50px;
+    right: 50px;
+    height: 4px;
+    background: #c4c4c4;
+    z-index: 0;
+}
+
+/* Título */
+.timeline-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 80px;
+    scrollbar-width: thin;
+    position: relative;
+    z-index: 2;
+    /* fica acima da linha */
+}
+
+/* Cada item */
+.timeline-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    min-width: 120px;
+
+}
+
+/* Bolinha */
+.timeline-item .dot {
+    width: 28px;
+    height: 28px;
+    background: #222;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid white;
+    box-shadow: 0 0 0 3px #222;
+    position: relative;
+    z-index: 3;
+}
+
+/* Ano */
+.timeline-item .year {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Modal */
+.modal {
+    cursor: pointer;
+    /* mostra que pode clicar */
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    max-width: 600px;
+    padding: 50px 20px;
+    border-radius: 10px;
+    animation: fade 0.3s ease;
+    cursor: default;
+}
+
+.modal-content img {
+    display: flex;
+    justify-self: center;
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Animação */
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.hero {
+    background: url('https://blog.allianztravel.com.br/destinos/mundo/principais-destinos-da-asia-e-africa/_jcr_content/root/parsys/wrapper/wrapper/image_1428717757.img.82.3360.png/1747846439716/%C3%A1sia.png') center/cover fixed;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1,
+.hero p {
+    background-color: #00000071;
+    padding: 2%;
+    margin: 0;
+    width: 130vh;
+
+
+}
+
+.hero h1 {
+    font-size: 3.2em;
+}

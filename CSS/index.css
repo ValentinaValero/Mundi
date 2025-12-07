@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+
+
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhcGVsJTIwZGUlMjBwYXJlZGUlMjA0a3xlbnwwfHwwfHx8MA%3D%3D') center/cover fixed;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    backdrop-filter: brightness(0.7);
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+    padding-left: 5%;
+    gap: 40px;
+}
+
+.card {
+    background: #f2f2f2;
+    padding: 30px;
+    width: 45vh;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px outset rgb(0, 0, 0);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #33333331;
+
+}
+
+.um {
+    background-color: #f0ff6b;
+}
+
+.dois {
+    background-color: #9cff75;
+}
+
+.tres {
+    background-color: #8ddfff;
+}
+
+.quatro {
+    background-color: #ff809b;
+}
+
+.cinco {
+    background-color: #ff9152;
+}
+
+.seis {
+    background-color: #c267ff;
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.cardMaior {
+    background: #f2f2f2;
+    padding: 30px;
+    width: 80vh;
+
+
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px outset rgb(0, 0, 0);
+}
+
+.cardMaior:hover {
+    transform: scale(1.05);
+    background-color: #33333331;
+
+}
