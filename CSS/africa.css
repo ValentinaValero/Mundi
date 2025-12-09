@@ -114,10 +114,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centraliza verticalmente */
     align-items: center;
-    /* Centraliza horizontalmente */
-
     text-align: center;
     color: white;
     padding: 20px;
@@ -147,7 +144,7 @@ h1 {
 
     gap: 30px;
     padding: 30px;
-    width: 190vh;
+    width: 300%;
     margin: 40px auto;
     color: white;
     background: #97832a;
